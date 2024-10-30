@@ -19,10 +19,3 @@
       user: ansible
       key: "{{ semaphore_akey }}"
 
-  - name: add ansible to sudoers
-    copy:
-      src: sudoer_ansible
-      dest: /etc/sudoers.d/ansible
-      owner: root
-      group: root
-      mode: 0440
