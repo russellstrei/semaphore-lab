@@ -1,5 +1,5 @@
 ---
-- hosts: pvenodes
+- hosts: localhost
   tasks:
     - name: Run whoami without become.
       command: whoami
