@@ -10,3 +10,11 @@
     - name: Set a fact with the user name.
       set_fact:
         login_user: "{{ whoami.stdout }}"
+    
+    - name: Echo Logged in user
+      ansible.builtin.debug:
+        msg: Logged in as: {{ whoami.stdout }} 
+    
+    - name: Get uptime information
+      ansible.builtin.shell: /usr/bin/uptime
+      register: result
