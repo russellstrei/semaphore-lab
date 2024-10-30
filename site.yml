@@ -1,11 +1,6 @@
 ---
 - hosts: web_servers
   tasks:
-    - name: Install Apache2
-      become: true
-      ansible.builtin.package:
-        name: apache2
-        
     - name: Run whoami without become.
       command: whoami
       changed_when: false
