@@ -1,5 +1,5 @@
 ---
-- hosts: servers
+- hosts: test_servers
   become: true
   tasks:
     - name: Test
