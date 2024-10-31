@@ -19,3 +19,7 @@
       user: ansible
       key: "{{ semaphore_akey }}"
 
+  - name: add Ansible ssh key
+    authorized_key:
+      user: root
+      key: "{{ semaphore_akey }}"
