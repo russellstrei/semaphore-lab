@@ -2,7 +2,7 @@
 - name: List all existing virtual machines on node
   community.general.proxmox_vm_info:
     api_host: proxmoxhost
-    api_user: root@pam
-    api_token_id: '{{ token_id | default(omit) }}'
-    api_token_secret: '{{ token_secret | default(omit) }}'
+    api_user: '{{ api_user }}'
+    api_token_id: '{{ api_token_id }}'
+    api_token_secret: '{{ api_secret }}'
     node: node01
