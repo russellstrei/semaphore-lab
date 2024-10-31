@@ -10,4 +10,6 @@
       api_port: '8006'
       api_user: '{{ api_user }}'
       api_password: '{{ api_secret }}'
+      api_token_id: '{{ api_token_id }}'
+      api_token_secret: '{{ api_secret }}'
       node: pve4
